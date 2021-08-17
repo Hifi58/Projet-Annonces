@@ -20,7 +20,7 @@ class PdoManager{
         return $db;
     }
 
-    protected function baseConnection(){
+    public function baseConnection(){
         try {
             $pdoConnect = new PDO("mysql:host=" . $GLOBALS['servername'] . ";dbname=" . $this->basename . ";charset=utf8", $GLOBALS['username'], $GLOBALS['password'], array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         } catch (Exception $e) {

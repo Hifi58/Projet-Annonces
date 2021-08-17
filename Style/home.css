@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/******************************
+
+        NAVIGATION
+
+******************************/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5em;
+    background-color: lightslategrey;
+}
+
+
+nav ul{
+    display: flex;
+    
+}
+
+nav li{
+    list-style: none;
+    margin-right: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/******************************
+
+       Register & Login
+
+******************************/
+
+section{
+    display: flex;
+    min-height: 90vh;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
